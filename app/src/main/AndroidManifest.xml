@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SportsJerseyCollection">
         <activity
+            android:name=".NBA_Activity"
+            android:exported="true" />
+        <activity
             android:name=".WishlistActivity"
             android:exported="true" />
         <activity

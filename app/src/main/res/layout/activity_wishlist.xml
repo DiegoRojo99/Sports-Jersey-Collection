@@ -11,26 +11,51 @@
         android:layout_width="0dp"
         android:layout_height="128dp"
         android:adjustViewBounds="true"
+        android:labelFor="@id/scrollView_wishlist"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/backgrounds/scenic" />
 
-    <androidx.gridlayout.widget.GridLayout
+    <ScrollView
+        android:id="@+id/scrollView_wishlist"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/iv_wishlist_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_wishlist_logo">
+        app:layout_constraintTop_toBottomOf="@+id/iv_wishlist_logo"
+        tools:ignore="SpeakableTextPresentCheck">
 
-        <GridView
-            android:id="@+id/gv_wishlist"
+        <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_column="0"
-            app:layout_row="0" />
-    </androidx.gridlayout.widget.GridLayout>
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/layout_wishlist_first_jersey"
+                layout="@layout/jersey_in_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/jersey_in_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/jersey_in_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/jersey_in_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_column="0"
+                app:layout_row="1" />
+        </androidx.gridlayout.widget.GridLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

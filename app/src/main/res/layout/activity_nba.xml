@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NBA_Activity">
+
+    <ImageView
+        android:id="@+id/iv_nba_logo"
+        android:layout_width="0dp"
+        android:layout_height="128dp"
+        android:adjustViewBounds="true"
+        android:labelFor="@id/scrollView_wishlist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_launcher_background" />
+
+    <ScrollView
+        android:id="@+id/scrollView_wishlist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/iv_nba_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_nba_logo"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/layout_wishlist_first_jersey"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_column="0"
+                app:layout_row="3" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_column="0"
+                app:layout_row="4" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_column="0"
+                app:layout_row="5" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_column="0"
+                app:layout_row="6" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_column="0"
+                app:layout_row="7" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_column="0"
+                app:layout_row="8" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_column="0"
+                app:layout_row="9" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.gridlayout.widget.GridLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Sports-Jersey-Collection</string>
+    <string name="nba">NBA</string>
+    <string name="team_name">Team Name</string>
 </resources>
