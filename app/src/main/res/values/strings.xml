@@ -2,4 +2,24 @@
     <string name="app_name">Sports-Jersey-Collection</string>
     <string name="nba">NBA</string>
     <string name="team_name">Team Name</string>
+
+    <string name="atl">Atlanta Hawks</string>
+    <string name="bos">Boston Celtics</string>
+    <string name="cha">Charlotte Hornets</string>
+    <string name="bkn">Brooklyn Nets</string>
+    <string name="chi">Chicago Bulls</string>
+    <string name="cle">Cleveland Cavaliers</string>
+    <string name="det">Detroit Pistons</string>
+    <string name="ind">Indiana Pacers</string>
+    <string name="mia">Miami Heat</string>
+    <string name="mil">Milwaukee Bucks</string>
+    <string name="nyk">New York Knicks</string>
+    <string name="orl">Orlando Magic</string>
+    <string name="phi">Philadelphia 76ers</string>
+    <string name="tor">Toronto Raptors</string>
+    <string name="was">Washington Wizards</string>
+    <string name="nba_logo">NBA Logo</string>
+    <string name="team_logo">Team Logo</string>
+
+
 </resources>
