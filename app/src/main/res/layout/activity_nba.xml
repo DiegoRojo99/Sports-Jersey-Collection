@@ -90,7 +90,7 @@
                 android:layout_height="wrap_content" />
 
             <include
-                android:id="@+id/include_miami_heas_team"
+                android:id="@+id/include_miami_heat_team"
                 layout="@layout/team_in_league"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
