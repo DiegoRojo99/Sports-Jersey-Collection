@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/Users/diegu/AndroidStudioProjects/SportsJerseyCollection/app/src/main/res/layout/activity_main.xml" value="0.15830800405268491" />
         <entry key="..\:/Users/diegu/AndroidStudioProjects/SportsJerseyCollection/app/src/main/res/layout/activity_nba.xml" value="0.1" />
+        <entry key="..\:/Users/diegu/AndroidStudioProjects/SportsJerseyCollection/app/src/main/res/layout/activity_team.xml" value="0.2536231884057971" />
         <entry key="..\:/Users/diegu/AndroidStudioProjects/SportsJerseyCollection/app/src/main/res/layout/activity_wishlist.xml" value="0.25" />
         <entry key="..\:/Users/diegu/AndroidStudioProjects/SportsJerseyCollection/app/src/main/res/layout/jersey_in_wishlist.xml" value="0.375" />
+        <entry key="..\:/Users/diegu/AndroidStudioProjects/SportsJerseyCollection/app/src/main/res/layout/shirt_info.xml" value="0.15830800405268491" />
         <entry key="..\:/Users/diegu/AndroidStudioProjects/SportsJerseyCollection/app/src/main/res/layout/team_in_league.xml" value="0.25" />
       </map>
     </option>
