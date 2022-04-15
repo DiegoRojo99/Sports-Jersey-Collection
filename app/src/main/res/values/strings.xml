@@ -21,5 +21,34 @@
     <string name="nba_logo">NBA Logo</string>
     <string name="team_logo">Team Logo</string>
 
+    <string name="filter">Filter:</string>
+    <string name="color">Color:</string>
+    <string name="sport">Sport:</string>
+    <string name="year">Year:</string>
+    <string name="see_more_jerseys">See more jerseys</string>
+
+    <string-array name="colors_array">
+        <item>White</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Navy</item>
+        <item>Grey</item>
+        <item>Yellow</item>
+        <item>Blue</item>
+    </string-array>
+    <string-array name="sports_array">
+        <item>Basketball</item>
+        <item>Soccer</item>
+    </string-array>
+    <string-array name="years_array">
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+    </string-array>
+
 
 </resources>
