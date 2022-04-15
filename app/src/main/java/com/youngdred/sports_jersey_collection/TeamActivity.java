@@ -102,6 +102,8 @@ public class TeamActivity extends AppCompatActivity {
         switch (index){
             case 0:
                 firstTV.setText(text);
+                int resID = getResources().getIdentifier(j.image , "drawable", getPackageName());
+                firstIV.setImageResource(resID);
                 break;
             case 1:
                 secondTV.setText(text);
