@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,7 +20,6 @@ import com.google.firebase.firestore.QuerySnapshot;
 import com.youngdred.sports_jersey_collection.items.Jersey;
 import com.youngdred.sports_jersey_collection.items.Team;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class TeamActivity extends AppCompatActivity {
@@ -99,20 +97,23 @@ public class TeamActivity extends AppCompatActivity {
 
     private void updateJersey(Jersey j, int index) {
         String text=j.year+" "+j.edition;
+        int resID = getResources().getIdentifier(j.image , "drawable", getPackageName());
         switch (index){
             case 0:
                 firstTV.setText(text);
-                int resID = getResources().getIdentifier(j.image , "drawable", getPackageName());
                 firstIV.setImageResource(resID);
                 break;
             case 1:
                 secondTV.setText(text);
+                secondIV.setImageResource(resID);
                 break;
             case 2:
                 thirdTV.setText(text);
+                thirdIV.setImageResource(resID);
                 break;
             case 3:
                 fourthTV.setText(text);
+                fourthIV.setImageResource(resID);
                 break;
         }
     }
