@@ -42,7 +42,7 @@ public class TeamActivity extends AppCompatActivity {
 
     private int getTeam(){
         Intent teamIntent=getIntent();
-        int teamId=teamIntent.getIntExtra("teamId",15);
+        int teamId=teamIntent.getIntExtra("teamID",15);
         return teamId;
     }
 
