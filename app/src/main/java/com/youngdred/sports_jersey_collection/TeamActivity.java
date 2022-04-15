@@ -96,6 +96,13 @@ public class TeamActivity extends AppCompatActivity {
     }
 
     private void updateJersey(Jersey j, int index) {
+        String tn=j.team.name;
+        tn=tn.toLowerCase();
+        tn=tn.replace(" ","_");
+        tn+="_logo";
+        int teamRes = getResources().getIdentifier(tn , "drawable", getPackageName());
+        teamLogo.setImageResource(teamRes);
+
         String text=j.year+" "+j.edition;
         int resID = getResources().getIdentifier(j.image , "drawable", getPackageName());
         switch (index){
