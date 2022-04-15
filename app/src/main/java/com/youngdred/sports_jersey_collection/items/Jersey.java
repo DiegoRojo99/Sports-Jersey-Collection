@@ -6,29 +6,21 @@ import java.util.ArrayList;
 
 public class Jersey {
 
-    Team team;
-    String jerseyId;
-    String color;
-    int year;
-    String sport;
-    Image picture;
+    public Team team;
+    public int jerseyId;
+    public String color;
+    public int year;
+    public String sport;
+    public String edition;
+    public String image;
 
-    public Jersey(Team team, String jerseyId, String color, int year, String sport, Image pic) {
+    public Jersey(Team team, int jerseyId, String color, int year, String sport, String edition, String image) {
         this.team = team;
         this.jerseyId = jerseyId;
         this.color = color;
         this.year = year;
         this.sport = sport;
-        this.picture=pic;
-    }
-
-    public static ArrayList<Jersey> createJerseysList(int numJerseys, Team t) {
-        ArrayList<Jersey> jerseys = new ArrayList<>();
-
-        for (int i = 1; i <= numJerseys; i++) {
-            jerseys.add(i,new Jersey(t, String.valueOf(i), null, 2022, null, null));
-        }
-
-        return jerseys;
+        this.edition=edition;
+        this.image=image;
     }
 }
