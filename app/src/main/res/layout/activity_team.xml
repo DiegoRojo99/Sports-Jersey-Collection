@@ -16,12 +16,74 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/no_logo_image" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_team"
-        android:layout_width="409dp"
-        android:layout_height="547dp"
-        android:layout_marginTop="16dp"
+
+    <ScrollView
+        android:id="@+id/scrollView_team_page"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:labelFor="@id/iv_nba_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_team_page_team_name"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            android:layout_columnWeight="1">
+
+            <include
+                android:id="@+id/include_first_jersey"
+                layout="@layout/shirt_info"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/include_second_jersey"
+                layout="@layout/shirt_info"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/include_third_jersey"
+                layout="@layout/shirt_info"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/include_fourth_jersey"
+                layout="@layout/shirt_info"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </androidx.gridlayout.widget.GridLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_team_page_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/team_name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_team_page_logo"
+        app:layout_constraintStart_toStartOf="@+id/iv_team_page_logo"
         app:layout_constraintTop_toBottomOf="@+id/iv_team_page_logo" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

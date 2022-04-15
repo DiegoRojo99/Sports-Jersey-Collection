@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "206675371017",
+    "project_id": "sports-jersey-collection",
+    "storage_bucket": "sports-jersey-collection.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206675371017:android:c9b823fd92d585900e44d8",
+        "android_client_info": {
+          "package_name": "com.youngdred.sports_jersey_collection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206675371017-eje1ee8lvgc1d88ueadqvsk1ioeo9lai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTMS62aBruXbK8TgtVb4N7jfG1ejFrcWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206675371017-eje1ee8lvgc1d88ueadqvsk1ioeo9lai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
