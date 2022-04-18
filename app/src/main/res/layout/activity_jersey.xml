@@ -103,7 +103,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/see_more_jerseys_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/see_more_jerseys"
