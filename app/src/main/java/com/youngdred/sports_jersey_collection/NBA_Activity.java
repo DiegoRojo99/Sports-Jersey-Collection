@@ -36,7 +36,7 @@ public class NBA_Activity extends AppCompatActivity implements View.OnClickListe
         bosTV=bosV.findViewById(R.id.tv_team_name);
         bosTV.setText(R.string.bos);
         bosIV=bosV.findViewById(R.id.iv_team_image);
-        //bosIV.setImageResource(R.drawable.boston_celtics_logo);
+        bosIV.setImageResource(R.drawable.boston_celtics_logo);
         bosIV.setOnClickListener(this);
 
         bknV=findViewById(R.id.include_brooklyn_nets_team);
@@ -99,7 +99,7 @@ public class NBA_Activity extends AppCompatActivity implements View.OnClickListe
         nykTV=nykV.findViewById(R.id.tv_team_name);
         nykTV.setText(R.string.nyk);
         nykIV=nykV.findViewById(R.id.iv_team_image);
-        //nykIV.setImageResource(R.drawable.cleveland_cavaliers_logo);
+        nykIV.setImageResource(R.drawable.new_york_knicks_logo);
         nykIV.setOnClickListener(this);
 
         orlV=findViewById(R.id.include_orlando_magic_team);
@@ -113,7 +113,7 @@ public class NBA_Activity extends AppCompatActivity implements View.OnClickListe
         phiTV=phiV.findViewById(R.id.tv_team_name);
         phiTV.setText(R.string.phi);
         phiIV=phiV.findViewById(R.id.iv_team_image);
-        //cleIV.setImageResource(R.drawable.cleveland_cavaliers_logo);
+        phiIV.setImageResource(R.drawable.philadelphia_76ers_logo);
         phiIV.setOnClickListener(this);
 
         torV=findViewById(R.id.include_toronto_raptors_team);

@@ -13,7 +13,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/toronto_raptors_logo"/>
+        android:src="@drawable/no_logo_image"/>
 
     <LinearLayout
         android:layout_width="0dp"
