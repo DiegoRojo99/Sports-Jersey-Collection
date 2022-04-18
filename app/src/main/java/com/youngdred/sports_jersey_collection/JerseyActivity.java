@@ -86,15 +86,18 @@ public class JerseyActivity extends AppCompatActivity {
     }
 
     public void resetJerseys(){
-        firstTV.setText("");
-        thirdTV.setText("");
-        secondTV.setText("");
-        fourthTV.setText("");
 
-        firstIV.setImageResource(0);
-        secondIV.setImageResource(0);
-        thirdIV.setImageResource(0);
-        fourthIV.setImageResource(0);
+        String t="";
+        firstTV.setText(t);
+        thirdTV.setText(t);
+        secondTV.setText(t);
+        fourthTV.setText(t);
+
+        int image=getResources().getIdentifier("loading" , "drawable", getPackageName());
+        firstIV.setImageResource(image);
+        secondIV.setImageResource(image);
+        thirdIV.setImageResource(image);
+        fourthIV.setImageResource(image);
 
     }
 
