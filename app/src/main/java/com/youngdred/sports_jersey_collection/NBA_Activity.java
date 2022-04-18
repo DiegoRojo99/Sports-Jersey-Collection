@@ -25,6 +25,10 @@ public class NBA_Activity extends AppCompatActivity implements View.OnClickListe
         nbaIV=findViewById(R.id.iv_nba_logo);
         nbaIV.setImageResource(R.drawable.nba_logo);
 
+        eastIV=findViewById(R.id.include_east_conference);
+        eastIV.setImageResource(R.drawable.nba_east_conference_logo);
+        eastIV.setOnClickListener(this);
+
         atlV=findViewById(R.id.include_atlanta_hawks_team);
         atlTV=atlV.findViewById(R.id.tv_team_name);
         atlTV.setText(R.string.atl);
@@ -163,6 +167,8 @@ public class NBA_Activity extends AppCompatActivity implements View.OnClickListe
             getTeamPage(28);
         }else if (view==wasIV) {
             getTeamPage(30);
+        }else if (view==eastIV) {
+            getTeamPage(31);
         } else {
             getTeamPage(0);
         }

@@ -31,17 +31,28 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_nba_logo"
         tools:ignore="SpeakableTextPresentCheck">
 
+
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:columnCount="3"
             android:layout_columnWeight="1">
 
+            <ImageView
+                android:id="@+id/include_east_conference"
+                android:src="@drawable/no_logo_image"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:contentDescription="@string/east_conference"
+                app:layout_columnSpan="3"/>
+
             <include
                 android:id="@+id/include_atlanta_hawks_team"
                 layout="@layout/team_in_league"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:layout_row="1"
+                app:layout_column="0"/>
 
             <include
                 android:id="@+id/include_boston_celtics_team"
@@ -60,8 +71,7 @@
                 layout="@layout/team_in_league"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_column="0"
-                app:layout_row="1" />
+                />
 
 
             <include
@@ -82,9 +92,7 @@
                 android:id="@+id/include_detroit_pistons_team"
                 layout="@layout/team_in_league"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_column="0"
-                app:layout_row="2" />
+                android:layout_height="wrap_content"/>
 
             <include
                 android:id="@+id/include_indiana_pacers_team"
@@ -103,9 +111,7 @@
                 android:id="@+id/include_milwaukee_bucks_team"
                 layout="@layout/team_in_league"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_column="0"
-                app:layout_row="3" />
+                android:layout_height="wrap_content"/>
 
             <include
                 android:id="@+id/include_new_york_knicks_team"
@@ -124,9 +130,7 @@
                 android:id="@+id/include_philadelphia_76ers_team"
                 layout="@layout/team_in_league"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_column="0"
-                app:layout_row="4" />
+                android:layout_height="wrap_content"/>
 
             <include
                 android:id="@+id/include_toronto_raptors_team"
@@ -140,95 +144,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-
-
-
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_column="0"
-                app:layout_row="5" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_column="0"
-                app:layout_row="6" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_column="0"
-                app:layout_row="7" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_column="0"
-                app:layout_row="8" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_column="0"
-                app:layout_row="9" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <include
-                layout="@layout/team_in_league"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
         </androidx.gridlayout.widget.GridLayout>
     </ScrollView>
 

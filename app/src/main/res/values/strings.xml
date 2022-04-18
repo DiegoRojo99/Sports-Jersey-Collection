@@ -27,6 +27,7 @@
     <string name="year">Year:</string>
     <string name="see_more_jerseys">See more jerseys</string>
     <string name="apply_filters">Apply Filters</string>
+    <string name="east_conference">East Conference</string>
 
     <string-array name="colors_array">
         <item>None</item>
