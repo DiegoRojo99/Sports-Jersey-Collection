@@ -62,11 +62,18 @@ public class TeamActivity extends AppCompatActivity {
 
     private int getTeam() {
         Intent teamIntent = getIntent();
-        return teamIntent.getIntExtra("teamID", 15);
+        return teamIntent.getIntExtra("teamID", 0);
     }
 
     private void updateTeamData(Team t) {
         teamName.setText(t.name);
+
+        String tn=t.name;
+        tn=tn.toLowerCase();
+        tn=tn.replace(" ","_");
+        tn+="_logo";
+        int teamRes = getResources().getIdentifier(tn , "drawable", getPackageName());
+        teamLogo.setImageResource(teamRes);
     }
 
     private void readTeam() {
@@ -96,12 +103,6 @@ public class TeamActivity extends AppCompatActivity {
     }
 
     private void updateJersey(Jersey j, int index) {
-        String tn=j.team.name;
-        tn=tn.toLowerCase();
-        tn=tn.replace(" ","_");
-        tn+="_logo";
-        int teamRes = getResources().getIdentifier(tn , "drawable", getPackageName());
-        teamLogo.setImageResource(teamRes);
 
         String text=j.year+" "+j.edition;
         int resID = getResources().getIdentifier(j.image , "drawable", getPackageName());

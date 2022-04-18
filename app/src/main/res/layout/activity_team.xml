@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/iv_team_page_logo"
         android:layout_width="0dp"
-        android:layout_height="182dp"
+        android:layout_height="128dp"
         android:layout_marginTop="8dp"
         android:contentDescription="@string/team_logo"
         app:layout_constraintEnd_toEndOf="parent"
