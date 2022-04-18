@@ -44,6 +44,14 @@
 
     </LinearLayout>
 
+    <Button
+        android:text="@string/apply_filters"
+        android:id="@+id/btn_apply_filters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_filters_jersey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <ScrollView
         android:id="@+id/scrollView_team_page"
@@ -53,12 +61,13 @@
         android:labelFor="@id/iv_nba_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ll_filters_jersey"
+        app:layout_constraintTop_toBottomOf="@+id/btn_apply_filters"
         tools:ignore="SpeakableTextPresentCheck">
 
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             app:columnCount="2"
             android:layout_columnWeight="1">
 
@@ -102,8 +111,8 @@
         android:id="@+id/see_more_jerseys_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/see_more_jerseys"
-        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="@+id/scrollView_team_page"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView_team_page" />

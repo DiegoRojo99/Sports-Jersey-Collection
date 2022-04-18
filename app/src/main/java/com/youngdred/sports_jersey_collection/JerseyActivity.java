@@ -85,7 +85,7 @@ public class JerseyActivity extends AppCompatActivity {
         getJerseys();
     }
 
-    public void resetJerseys(){
+    private void resetJerseys(){
 
         String t="";
         firstTV.setText(t);
@@ -168,6 +168,24 @@ public class JerseyActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    private boolean checkNone(String text){
+        return !text.equals("None");
+    }
+    private void applyFilter(String color, String sport, String year){
+
+        if (checkNone(color)){
+            //Get color filter
+        }
+        if (checkNone(sport)){
+            //Get sport filter
+        }
+        if (checkNone(year)){
+            //Get year filter
+        }
+
+
     }
 
 }

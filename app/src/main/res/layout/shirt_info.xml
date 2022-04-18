@@ -16,6 +16,7 @@
     <TextView
         android:id="@+id/tv_jersey_name"
         android:layout_width="0dp"
+        android:layout_marginTop="4dp"
         android:textSize="16sp"
         android:layout_height="wrap_content"
         android:text="@string/team_name"
