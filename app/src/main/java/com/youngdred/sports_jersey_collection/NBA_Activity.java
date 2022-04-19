@@ -14,6 +14,10 @@ public class NBA_Activity extends AppCompatActivity implements View.OnClickListe
     TextView atlTV, bosTV, bknTV, chaTV, chiTV, cleTV, detTV, indTV, miaTV, milTV, nykTV, orlTV, phiTV, torTV, wasTV;
     View atlV, bosV, bknV, chaV, chiV, cleV, detV, indV, miaV, milV, nykV, orlV, phiV, torV, wasV;
 
+    ImageView dalIV, denIV, lacIV, lalIV, okcIV, nopIV, sasIV, gswIV, phoIV, porIV, sacIV, memIV, minIV, houIV, utaIV;
+    TextView dalTV, denTV, lacTV, lalTV, okcTV, nopTV, sasTV, gswTV, phoTV, porTV, sacTV, memTV, minTV, houTV, utaTV;
+    View dalV, denV, lacV, lalV, okcV, nopV, sasV, gswV, phoV, porV, sacV, memV, minV, houV, utaV;
+
     ImageView nbaIV, eastIV, westIV;
 
 
@@ -28,6 +32,10 @@ public class NBA_Activity extends AppCompatActivity implements View.OnClickListe
         eastIV=findViewById(R.id.include_east_conference);
         eastIV.setImageResource(R.drawable.nba_east_conference_logo);
         eastIV.setOnClickListener(this);
+
+        westIV=findViewById(R.id.include_west_conference);
+        westIV.setImageResource(R.drawable.nba_west_conference_logo);
+        westIV.setOnClickListener(this);
 
         atlV=findViewById(R.id.include_atlanta_hawks_team);
         atlTV=atlV.findViewById(R.id.tv_team_name);
@@ -133,10 +141,117 @@ public class NBA_Activity extends AppCompatActivity implements View.OnClickListe
         wasIV=wasV.findViewById(R.id.iv_team_image);
         wasIV.setImageResource(R.drawable.washington_wizards_logo);
         wasIV.setOnClickListener(this);
+
+        dalV=findViewById(R.id.include_dallas_mavericks_team);
+        dalTV=dalV.findViewById(R.id.tv_team_name);
+        dalTV.setText(R.string.dal);
+        dalIV=dalV.findViewById(R.id.iv_team_image);
+        dalIV.setImageResource(R.drawable.dallas_mavericks_logo);
+        dalIV.setOnClickListener(this);
+
+        denV=findViewById(R.id.include_denver_nuggets_team);
+        denTV=denV.findViewById(R.id.tv_team_name);
+        denTV.setText(R.string.den);
+        denIV=denV.findViewById(R.id.iv_team_image);
+        denIV.setImageResource(R.drawable.denver_nuggets_logo);
+        denIV.setOnClickListener(this);
+
+        lacV=findViewById(R.id.include_los_angeles_clippers_team);
+        lacTV=lacV.findViewById(R.id.tv_team_name);
+        lacTV.setText(R.string.lac);
+        lacIV=lacV.findViewById(R.id.iv_team_image);
+        lacIV.setImageResource(R.drawable.los_angeles_clippers_logo);
+        lacIV.setOnClickListener(this);
+
+        lalV=findViewById(R.id.include_los_angeles_lakers_team);
+        lalTV=lalV.findViewById(R.id.tv_team_name);
+        lalTV.setText(R.string.lal);
+        lalIV=lalV.findViewById(R.id.iv_team_image);
+        lalIV.setImageResource(R.drawable.los_angeles_lakers_logo);
+        lalIV.setOnClickListener(this);
+
+        okcV=findViewById(R.id.include_okc_thunder_team);
+        okcTV=okcV.findViewById(R.id.tv_team_name);
+        okcTV.setText(R.string.okc);
+        okcIV=okcV.findViewById(R.id.iv_team_image);
+        okcIV.setImageResource(R.drawable.oklahoma_city_thunder_logo);
+        okcIV.setOnClickListener(this);
+
+        nopV=findViewById(R.id.include_new_orleans_pelicans_team);
+        nopTV=nopV.findViewById(R.id.tv_team_name);
+        nopTV.setText(R.string.nop);
+        nopIV=nopV.findViewById(R.id.iv_team_image);
+        nopIV.setImageResource(R.drawable.new_orleans_pelicans_logo);
+        nopIV.setOnClickListener(this);
+
+        sasV=findViewById(R.id.include_san_antonio_spurs_team);
+        sasTV=sasV.findViewById(R.id.tv_team_name);
+        sasTV.setText(R.string.sas);
+        sasIV=sasV.findViewById(R.id.iv_team_image);
+        sasIV.setImageResource(R.drawable.san_antonio_spurs_logo);
+        sasIV.setOnClickListener(this);
+
+        gswV=findViewById(R.id.include_golden_state_warriors_team);
+        gswTV=gswV.findViewById(R.id.tv_team_name);
+        gswTV.setText(R.string.gsw);
+        gswIV=gswV.findViewById(R.id.iv_team_image);
+        gswIV.setImageResource(R.drawable.golden_state_warriors_logo);
+        gswIV.setOnClickListener(this);
+
+        phoV=findViewById(R.id.include_phoenix_suns_team);
+        phoTV=phoV.findViewById(R.id.tv_team_name);
+        phoTV.setText(R.string.pho);
+        phoIV=phoV.findViewById(R.id.iv_team_image);
+        phoIV.setImageResource(R.drawable.phoenix_suns_logo);
+        phoIV.setOnClickListener(this);
+
+        porV=findViewById(R.id.include_portland_trail_blazers_team);
+        porTV=porV.findViewById(R.id.tv_team_name);
+        porTV.setText(R.string.por);
+        porIV=porV.findViewById(R.id.iv_team_image);
+        porIV.setImageResource(R.drawable.portland_trail_blazers_logo);
+        porIV.setOnClickListener(this);
+
+        sacV=findViewById(R.id.include_sacramento_kings_team);
+        sacTV=sacV.findViewById(R.id.tv_team_name);
+        sacTV.setText(R.string.sac);
+        sacIV=sacV.findViewById(R.id.iv_team_image);
+        sacIV.setImageResource(R.drawable.sacramento_kings_logo);
+        sacIV.setOnClickListener(this);
+
+        memV=findViewById(R.id.include_memphis_grizzlies_team);
+        memTV=memV.findViewById(R.id.tv_team_name);
+        memTV.setText(R.string.mem);
+        memIV=memV.findViewById(R.id.iv_team_image);
+        memIV.setImageResource(R.drawable.memphis_grizzlies_logo);
+        memIV.setOnClickListener(this);
+
+        minV=findViewById(R.id.include_minnesota_timberwolves_team);
+        minTV=minV.findViewById(R.id.tv_team_name);
+        minTV.setText(R.string.min);
+        minIV=minV.findViewById(R.id.iv_team_image);
+        minIV.setImageResource(R.drawable.minnesota_timberwolves_logo);
+        minIV.setOnClickListener(this);
+
+        houV=findViewById(R.id.include_houston_rockets_team);
+        houTV=houV.findViewById(R.id.tv_team_name);
+        houTV.setText(R.string.hou);
+        houIV=houV.findViewById(R.id.iv_team_image);
+        houIV.setImageResource(R.drawable.houston_rockets_logo);
+        houIV.setOnClickListener(this);
+
+        utaV=findViewById(R.id.include_utah_jazz_team);
+        utaTV=utaV.findViewById(R.id.tv_team_name);
+        utaTV.setText(R.string.uta);
+        utaIV=utaV.findViewById(R.id.iv_team_image);
+        utaIV.setImageResource(R.drawable.utah_jazz_logo);
+        utaIV.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View view) {
+
         if (view==atlIV) {
             getTeamPage(1);
         } else if (view==bosIV) {
@@ -149,26 +264,58 @@ public class NBA_Activity extends AppCompatActivity implements View.OnClickListe
             getTeamPage(5);
         }else if (view==cleIV) {
             getTeamPage(6);
+        }else if (view==dalIV) {
+            getTeamPage(7);
+        }else if (view==denIV) {
+            getTeamPage(8);
         }else if (view==detIV) {
             getTeamPage(9);
+        }else if (view==gswIV) {
+            getTeamPage(10);
+        }else if (view==houIV) {
+            getTeamPage(11);
         }else if (view==indIV) {
             getTeamPage(12);
+        }else if (view==lacIV) {
+            getTeamPage(13);
+        }else if (view==lalIV) {
+            getTeamPage(14);
+        }else if (view==memIV) {
+            getTeamPage(15);
         }else if (view==miaIV) {
             getTeamPage(16);
         }else if (view==milIV) {
             getTeamPage(17);
+        }else if (view==minIV) {
+            getTeamPage(18);
+        }else if (view==nopIV) {
+            getTeamPage(19);
         }else if (view==nykIV) {
             getTeamPage(20);
+        }else if (view==okcIV) {
+            getTeamPage(21);
         }else if (view==orlIV) {
             getTeamPage(22);
         }else if (view==phiIV) {
             getTeamPage(23);
+        }else if (view==phoIV) {
+            getTeamPage(24);
+        }else if (view==porIV) {
+            getTeamPage(25);
+        }else if (view==sacIV) {
+            getTeamPage(26);
+        }else if (view==sasIV) {
+            getTeamPage(27);
         }else if (view==torIV) {
             getTeamPage(28);
+        }else if (view==utaIV) {
+            getTeamPage(29);
         }else if (view==wasIV) {
             getTeamPage(30);
         }else if (view==eastIV) {
             getTeamPage(31);
+        }else if (view==westIV) {
+            getTeamPage(32);
         } else {
             getTeamPage(0);
         }

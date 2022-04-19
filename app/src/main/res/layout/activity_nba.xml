@@ -144,7 +144,113 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+
+            <ImageView
+                android:id="@+id/include_west_conference"
+                android:src="@drawable/no_logo_image"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:contentDescription="@string/east_conference"
+                app:layout_columnSpan="3"/>
+
+            <include
+                android:id="@+id/include_dallas_mavericks_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/include_denver_nuggets_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/include_los_angeles_clippers_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/include_los_angeles_lakers_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <include
+                android:id="@+id/include_okc_thunder_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/include_new_orleans_pelicans_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/include_san_antonio_spurs_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/include_golden_state_warriors_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/include_phoenix_suns_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/include_portland_trail_blazers_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/include_sacramento_kings_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/include_memphis_grizzlies_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/include_minnesota_timberwolves_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/include_houston_rockets_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/include_utah_jazz_team"
+                layout="@layout/team_in_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
         </androidx.gridlayout.widget.GridLayout>
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

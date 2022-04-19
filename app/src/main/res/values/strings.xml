@@ -28,6 +28,21 @@
     <string name="see_more_jerseys">See more jerseys</string>
     <string name="apply_filters">Apply Filters</string>
     <string name="east_conference">East Conference</string>
+    <string name="dal">Dallas Mavericks</string>
+    <string name="den">Denver Nuggets</string>
+    <string name="lac">Los Angeles Clippers</string>
+    <string name="lal">Los Angeles Lakers</string>
+    <string name="okc">Oklahoma City Thunder</string>
+    <string name="nop">New Orleans Pelicans</string>
+    <string name="sas">San Antonio Spurs</string>
+    <string name="gsw">Golden State Warriors</string>
+    <string name="pho">Phoenix Suns</string>
+    <string name="uta">Utah Jazz</string>
+    <string name="hou">Houston Rockets</string>
+    <string name="min">Minnesota Timberwolves</string>
+    <string name="mem">Memphis Grizzlies</string>
+    <string name="sac">Sacramento Kings</string>
+    <string name="por">Portland Trail Blazers</string>
 
     <string-array name="colors_array">
         <item>None</item>
